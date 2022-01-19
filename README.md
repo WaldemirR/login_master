@@ -42,7 +42,19 @@
     
 - Layout
     - div class container
+    - Booststrap navbar
+    - Aleração para os codigo de html para os helpers do Ruby
+    - Alteração das brands 
 
-- Booststrap navbar
-- Aleração para os codigo de html para os helpers do Ruby
-- Alteração das brands 
+- Definido paramentros para acessar a pagina
+    
+    - Controler - definir
+    - Aplication - criação do render partial
+    - layout - criação do arquivo Flash.html.erb para inclusão das flash
+    - flash menssagens  -hash
+    - flash[:notice] = "Login efetuado com sucesso!" - inclusão o que deverá ser informado ao usuario
+    - flash[:alert] = "Verificar e-mail e senha fornecidos" - inclusão o que deverá ser informado ao usuario
+    - Adicionado o flash.now para limpar cache
+    - No controler - flash.now aparecerá apenas na primeira requisição
+    
+
