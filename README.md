@@ -1,4 +1,4 @@
--Primeira Aplicação em Rails 
+- Primeira Aplicação em Rails 
 
     -  Mkdir login - criação da pasta dentro do diretorio C: do pc
     -  rails new login_master - criação da aplicação login_master
@@ -21,7 +21,7 @@
 
 - Criação da pagina "about"
 
-    - Route
+    - Route - http://localhost:3000/rails/info/routes
     - Controller
     - View
     - VIsualizar a página
@@ -35,4 +35,14 @@
     - visualizar pagina 
 - Push para o github
 
+- Adicionado o Boostrap
+    - Adicionando o link do Css no loyout aplication
+    - Adicionando o lonk do Budle no loyout aplication
+    - Aplicando classe "d-flex algin-items-center justify-content-center"
+    
+- Layout
+    - div class container
 
+- Booststrap navbar
+- Aleração para os codigo de html para os helpers do Ruby
+- Alteração das brands 
