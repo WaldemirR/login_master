@@ -56,5 +56,21 @@
     - flash[:alert] = "Verificar e-mail e senha fornecidos" - inclusão o que deverá ser informado ao usuario
     - Adicionado o flash.now para limpar cache
     - No controler - flash.now aparecerá apenas na primeira requisição
-    
+    - Acessibilidade acrescentada - role
+
+- User model
+
+    - rails g model User email:string password_digest: string
+    - rails db:migrate
+    - has_secure_password # User model file - password e password_confimation campos virtuais
+    - descomentar na GEMFILE o bydescript e rodar o bandle
+    - rails c  - comando para abrir no terminal com os registros do usuario
+    $rails c
+    >User.all
+    >User.create(email:"teste", password:"password", password_confirmation:"password")
+    >user.first
+    >User.second
+    >user.third
+    >user.last
+    >User.count
 
