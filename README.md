@@ -64,6 +64,7 @@
     - rails db:migrate
     - has_secure_password # User model file - password e password_confimation campos virtuais
     - descomentar na GEMFILE o bydescript e rodar o bandle
+    #Terminal
     - rails c  - comando para abrir no terminal com os registros do usuario
     $rails c
     >User.all
@@ -73,4 +74,15 @@
     >user.third
     >user.last
     >User.count
+
+- Validação de usuario
+    - Acrescentando no null: false no e-mail, proteção no banco de dados e não só na aplicação
+    #Terminal
+    $ Rails db:rollback db:migrate
+    $ Rails db:drop
+    $ Rsild db:redo
+
+- Melhorando a validação do cadastro do usuario para não termos possibilidades de erro no cadastro
+    #User Model
+    - validates :email, presence: true, format: {/\A[^@\s]+@[^@\s]+\z/, message:"E-mail deve estar preenchido e ser um e-mail válidade"}
 
