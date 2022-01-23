@@ -15,3 +15,11 @@
     <%form.text_field :password %>
         <%form.text_field :password_confirnmation %>
     <%end%>
+# Controle_Models_View
+
+- Criação da tela de login
+    - Criação do arquivo Main, Index
+    - Validações dos usuarios e senhas dentro do banco de dados
+    - Validações do botão de logout 
+    - Ajustes nas rotas para chamar a tela de login inicial
+    
