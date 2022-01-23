@@ -22,4 +22,5 @@
     - Validações dos usuarios e senhas dentro do banco de dados
     - Validações do botão de logout 
     - Ajustes nas rotas para chamar a tela de login inicial
+    - 
     
