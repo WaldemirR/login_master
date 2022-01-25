@@ -1,0 +1,2 @@
+class Quilometragem < ApplicationRecord
+end

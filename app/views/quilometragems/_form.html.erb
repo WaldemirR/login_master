@@ -1,0 +1,65 @@
+<h1>Dados de saida do veiculo</h1>
+
+<%= form_with(model: quilometragem) do |form| %>
+
+  <% if quilometragem.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(quilometragem.errors.count, "error") %> prohibited this quilometragem from being saved:</h2>
+
+      <ul>
+        <% quilometragem.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="mb-3">
+    <%= form.label :date %>
+    <%= form.text_field :date, class:"form-control", placeholder: "Informe a data de saida" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :name %>
+    <%= form.text_field :name, class:"form-control", placeholder: "Nome do condutor" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :state %>
+    <%= form.text_field :state, class:"form-control", placeholder: "Estado, Ex: SP" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :city %>
+    <%= form.text_field :city, class:"form-control", placeholder: "Informe a Cidade"  %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :addres %>
+    <%= form.text_field :addres, class:"form-control", placeholder: "Endereço de destino"  %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :client %>
+    <%= form.text_field :client, class:"form-control", placeholder: "Nome do cliente"  %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :board %>
+    <%= form.text_field :board, class:"form-control", placeholder: "Placa do veiculo" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :startingkm %>
+    <%= form.text_field :startingkm, class:"form-control", placeholder: "Km Inicial"  %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :finalkm %>
+    <%= form.text_field :finalkm, class:"form-control", placeholder: "Km FInal"  %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.submit "Salvar", class:"btn btn-primary" %> 
+</div>
+<% end %>

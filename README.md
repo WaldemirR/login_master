@@ -45,7 +45,12 @@
     - Adicionando FORM para edição de senha dentro do new.edit.rb com os parametros adicionados dentro do application_controller.rb
     - Ajuste da rota de PasswordsController < applicationController para PasswordsController < ApplicationController, atenção ao descrever as rotas pois devem seguir um padrão, detectei este erro onde o Application estava com o A minusculo, dando erro ao buscar o link de edição da senha.
     - Inclindo o link para aleração de senha no menu de entrar no sistema
-  
+# Formulario para coletar dados para controle de quilometragem
+
+- Criação do banco de dados (ails generate scaffold quilometragem date:string  name:string state:string city:string addres:string client:string board:string startingkm:string finalkm:string )
+- Criação do formulario para coletar dados postados nele.
+- Alterações dentro do formulario para preparar para a utilização []
+
 
 
     

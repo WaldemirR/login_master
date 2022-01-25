@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_19_174818) do
+ActiveRecord::Schema.define(version: 2022_01_25_021702) do
+
+  create_table "quilometragems", force: :cascade do |t|
+    t.string "date"
+    t.string "name"
+    t.string "state"
+    t.string "city"
+    t.string "addres"
+    t.string "client"
+    t.string "board"
+    t.string "startingkm"
+    t.string "finalkm"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", null: false
