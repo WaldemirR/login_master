@@ -2,12 +2,4 @@
 <h1> Seja Bem Vindo (a) </h1>
 </div>
 
-<% if @user %>
-Logado em: <%= @user.email %>
-<div class="mb-3">
     
-<%= button_to "Sair", logout_path, method: :delete, class:"btn btn-primary" %>
-
-</div>
-
-<% end %>
